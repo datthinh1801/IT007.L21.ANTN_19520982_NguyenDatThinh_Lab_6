@@ -1,1 +1,3 @@
-# IT007.L21.ANTN_19520982_NguyenDatThinh
+# [IT007.L21.ANTN] Lab 6
+> 19520982  
+> Nguyen Dat Thinh  
