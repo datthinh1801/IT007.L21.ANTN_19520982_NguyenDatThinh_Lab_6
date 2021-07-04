@@ -37,4 +37,13 @@ Nghịch lý Belady sẽ xảy ra khi sử dụng thuật toán FIFO.
 | Frame 3 |  |   | 1 | 1 | 1 | 1 | 1 | 1 | 2 | 2 | 2 | 2 |
 | Frame 4 |  |   |   | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 1 | 1 |
 | Lỗi trang | * | * | * | * |  |  | * | * | * | * | * | * |  
-> Số lượng lỗi trang là **10**.
+> Số lượng lỗi trang là **10**.  
+
+### Bài 2
+#### Giải thuật nào là bất khả thi nhất?
+- Giải thuật OPT.  
+- Vì đối với các chương trình phức tạp, hệ điều hành không thể nào biết trước được flow của tiến trình trong tương lai nên việc thực thi OPT là không thể.  
+
+#### Giải thuật nào là phức tạp nhất?
+- Giải thuật OPT. 
+- Vì đối với giải thuật FIFO và LRU, hệ điều hành chỉ cần lưu lại trạng thái truy xuất của các trang ở trong frame và chỉ cần tính thời gian vào frame sớm nhất (FIFO) hoặc được truy xuất sớm nhất (LRU) là đã có thể hiện thực được 2 giải thuật này. Tuy nhiên đối với OPT, hệ điều hành phải biết trước được flow của tiến trình trong tương lai, đồng thời hệ điều hành phải thực hiện nhiều tác vụ kiểm tra hơn (kiểm tra xem trang nào không được thực thi trong tương lại, hoặc trang nào được thực thi trễ nhất trong tương lai).
